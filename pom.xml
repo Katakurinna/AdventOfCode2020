@@ -4,6 +4,13 @@
     <groupId>me.cerratolabs</groupId>
     <artifactId>AdventOfCode2020</artifactId>
     <version>1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+        </dependency>
+    </dependencies>
     <packaging>jar</packaging>
     <build>
         <plugins>

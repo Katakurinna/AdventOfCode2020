@@ -1,5 +1,7 @@
 package me.cerratolabs.adventofcode2020.day4;
 
+import me.cerratolabs.adventofcode2020.utils.StringUtils;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -107,10 +109,11 @@ public class D4P2 {
     }
 
     private static boolean ispid(String value) {
-        return value.length() == 9;
+        return value.length() == 9 && StringUtils.isInteger(value);
     }
 
     private static boolean iscid(String value) {
         return true;
     }
+
 }
