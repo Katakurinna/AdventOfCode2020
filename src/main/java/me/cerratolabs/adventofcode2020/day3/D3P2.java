@@ -22,10 +22,7 @@ public class D3P2 {
         int trees = 0;
         for (int i = down; i < input.size(); i = i + down) {
             numbers = numbers + right;
-            int aux = numbers;
-            while (aux >= input.get(i).length()) {
-                aux = aux - input.get(i).length();
-            }
+            int aux = numbers % input.get(i).length();
             if (input.get(i).charAt(aux) == '#') {
                 trees++;
             }

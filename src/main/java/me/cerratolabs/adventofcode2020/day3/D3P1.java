@@ -1,7 +1,5 @@
 package me.cerratolabs.adventofcode2020.day3;
 
-import me.cerratolabs.adventofcode2020.day2.D2P2;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -15,10 +13,7 @@ public class D3P1 {
         input.remove(0);
         for (String s : input) {
             numbers = numbers + 3;
-            int aux = numbers;
-            while (aux >= s.length()) {
-                aux = aux - s.length();
-            }
+            int aux = numbers % s.length();
             if (s.charAt(aux) == '#') {
                 trees++;
             }
