@@ -21,9 +21,6 @@ public class D2P1 {
         int max = Integer.parseInt(maxL.substring(0, maxL.indexOf(" ")));
         char letter = maxL.substring(maxL.indexOf(" ") + 1).charAt(0);
         int times = password.length() - password.replace(letter + "", "").length();
-        if (times >= min && times <= max) {
-            return true;
-        }
-        return false;
+        return times >= min && times <= max;
     }
 }
