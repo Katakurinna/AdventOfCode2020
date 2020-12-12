@@ -1,5 +1,7 @@
 package me.cerratolabs.adventofcode2020.day4;
 
+import me.cerratolabs.adventofcode2020.utils.Reader;
+
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.file.Files;
@@ -11,7 +13,7 @@ import java.util.List;
 public class D4P1 {
 
     public static void main(String[] args) throws IOException {
-        List<String> input = Files.readAllLines(Paths.get("src\\main\\resources\\day4.txt"));
+        List<String> input = Reader.readLines("day4");
         List<String> passports = new ArrayList<>();
         passports.add("");
         for (String line : input) {
