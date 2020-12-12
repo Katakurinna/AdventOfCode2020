@@ -1,4 +1,4 @@
-package me.cerratolabs.adventofcode2020.day4;
+package me.cerratolabs.adventofcode2020.day5;
 
 public class Airplane {
 

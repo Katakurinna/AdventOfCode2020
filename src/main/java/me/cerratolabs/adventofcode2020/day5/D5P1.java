@@ -1,6 +1,5 @@
 package me.cerratolabs.adventofcode2020.day5;
 
-import me.cerratolabs.adventofcode2020.day4.Airplane;
 import me.cerratolabs.adventofcode2020.utils.Reader;
 
 import java.io.IOException;
@@ -15,7 +14,7 @@ public class D5P1 {
         System.out.println("Highest ticket: " + collect.get(collect.size() - 1));
         for (int i = 0; i < 934; i++) {
             if (!collect.contains(i)) {
-                // one is my ticket.
+                // one is my ticket. (PART 2)
                 System.out.println(i);
             }
         }
